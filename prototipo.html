@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TerraMA² | Alertas</title>
+    <title>Banco de Dados de Queimadas</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -43,8 +43,9 @@
     <![endif]-->
 
     <style>
-   .sidebar-mini.sidebar-collapse .sidebar-menu > #lele:hover > a > span {
-      display: none!important;;
+    .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > a > span:not(.pull-right),
+    .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > .treeview-menu {
+      display: none !important;
     }
 
     .logo-mini {
@@ -75,6 +76,63 @@
     .main-sidebar {
       padding-top: 83px !important;
     }
+
+    .sidebar-menu > li > a {
+      height: 44px;
+      background-repeat: no-repeat;
+      background-position: 14px;
+      background-size: 14px;
+    }
+
+    .sidebar-menu > li > a:hover {
+      background-repeat: no-repeat !important;
+      background-position: 14px !important;
+      background-size: 14px !important;
+    }
+
+    #btn-terrama2-layerexplorer > a {
+      background-image: url('icon_layers.png');
+    }
+
+    #filtros > a {
+      background-image: url('icon_calendar.png');
+    }
+
+    #tabelas > a {
+      background-image: url('icon_table.png');
+    }
+
+    #graficos > a {
+      background-image: url('icon_graphics.png');
+    }
+
+    .sidebar-menu > li > a > span {
+      padding-left: 22px;
+    }
+
+    #filtros-box {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      position: absolute;
+      float: left;
+      color: white;
+      top: 0;
+      width: 310px;
+      bottom: 0;
+      left: -350px;
+      z-index: 500;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-top: 83px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
     </style>
   </head>
   <body class="skin-blue sidebar-mini wysihtml5-supported sidebar-collapse">
@@ -403,123 +461,33 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-            <li id="lele">
+            <li id="btn-terrama2-layerexplorer" box="terrama2-layerexplorer">
               <a href="#">
-                <i class="fa fa-th"></i> <span>Camadas</span>
+                <span>Camadas</span>
               </a>
             </li>
-            <li class="treeview">
+            <li id="filtros" box="filtros-box">
               <a href="#">
-                <i class="fa fa-pie-chart"></i>
-                <span>Charts</span>
-                <i class="fa fa-angle-left pull-right"></i>
+                <span>Filtros</span>
               </a>
-              <ul class="treeview-menu">
-                <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-                <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-                <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-                <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
-              </ul>
             </li>
-            <li class="treeview">
+            <li id="tabelas">
               <a href="#">
-                <i class="fa fa-laptop"></i>
-                <span>UI Elements</span>
-                <i class="fa fa-angle-left pull-right"></i>
+                <span>Tabelas</span>
               </a>
-              <ul class="treeview-menu">
-                <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
-                <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
-                <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-                <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
-                <li><a href="pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
-                <li><a href="pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
-              </ul>
             </li>
-            <li class="treeview">
+            <li id="graficos">
               <a href="#">
-                <i class="fa fa-edit"></i> <span>Forms</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">30px
-                <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-                <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-                <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-table"></i> <span>Tables</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-                <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="pages/calendar.html">
-                <i class="fa fa-calendar"></i> <span>Calendar</span>
-                <small class="label pull-right bg-red">3</small>
+                <span>Gr&aacute;ficos</span>
               </a>
             </li>
-            <li>
-              <a href="pages/mailbox/mailbox.html">
-                <i class="fa fa-envelope"></i> <span>Mailbox</span>
-                <small class="label pull-right bg-yellow">12</small>
-              </a>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-folder"></i> <span>Examples</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
-                <li><a href="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
-                <li><a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
-                <li><a href="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
-                <li><a href="pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-                <li><a href="pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-                <li><a href="pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-                <li><a href="pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-share"></i> <span>Multilevel</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-                <li>
-                  <a href="#"><i class="fa fa-circle-o"></i> Level One <i class="fa fa-angle-left pull-right"></i></a>
-                  <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
-                    <li>
-                      <a href="#"><i class="fa fa-circle-o"></i> Level Two <i class="fa fa-angle-left pull-right"></i></a>
-                      <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-              </ul>
-            </li>
-            <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
-            <li class="header">LABELS</li>
-            <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
           </ul>
         </section>
         <!-- /.sidebar -->
       </aside>
 
-      <div id="terrama2-layerexplorer-bg"></div>
-      <div id="terrama2-layerexplorer">
+      <div id="terrama2-bg"></div>
+      <div class="terrama2-left-content" id="terrama2-layerexplorer">
         <div class="terrama2-leftbox-content">
           <div class="terrama2-leftbox-header"><h2>Camadas</h2></div>
           <li data-layerid="server" class="parent_li">
@@ -565,6 +533,21 @@
             </ul>
           </li>
         </div>
+      </div>
+
+      <div class="terrama2-left-content fullscreen" id="filtros-box">
+        <h3 class="box-title">Quick Example</h3>
+        <form role="form">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
 
       <!-- Content Wrapper. Contains page content -->
@@ -824,30 +807,85 @@
       })
     });
 
-    $("#lele").on('click', function(event) {
+    $(".sidebar-menu > li").on('click', function(event) {
       event.preventDefault();
-      if($("#terrama2-layerexplorer").css('left') !== '-350px') {
-        $("#terrama2-layerexplorer").animate({ left: '-350px' }, { duration: 300, queue: false });
-        $("#terrama2-layerexplorer-bg").animate({ left: '-350px' }, { duration: 300, queue: false });
+
+      var box = $(this).attr('box');
+      var id = $(this).attr('id');
+
+      if(box !== "" && box !== undefined) {
+        var active = $("#" + box).hasClass('active');
+
+        $(".terrama2-left-content").removeClass('active');
+        $(".terrama2-left-content").animate({ width: '350px', left: '-350px' }, { duration: 300, queue: false });
+
+        $("#terrama2-bg").removeClass('active');
+        $("#terrama2-bg").animate({ width: '350px', left: '-350px' }, { duration: 300, queue: false });
+        $("#terrama2-bg").attr('box', '');
+
+        if(!active) {
+          $("#" + box).addClass('active');
+
+          $("#terrama2-bg").addClass('active');
+          $("#terrama2-bg").attr('box', id);
+
+          if($("body").hasClass('sidebar-collapse')) {
+            $("#" + box).animate({ left: '50px' }, { duration: 300, queue: false });
+
+            if($("#" + box).hasClass('fullscreen')) {
+              $("#terrama2-bg").animate({ width: '100%', left: '50px' }, { duration: 300, queue: false });
+            } else {
+              $("#terrama2-bg").animate({ left: '50px' }, { duration: 300, queue: false });
+            }
+          } else {
+            $("#" + box).animate({ left: '230px' }, { duration: 300, queue: false });
+
+            if($("#" + box).hasClass('fullscreen')) {
+              $("#terrama2-bg").animate({ width: '100%', left: '230px' }, { duration: 300, queue: false });
+            } else {
+              $("#terrama2-bg").animate({ left: '230px' }, { duration: 300, queue: false });
+            }
+          }
+        }
       } else {
-        if($("body").hasClass('sidebar-collapse')) {
-          $("#terrama2-layerexplorer").animate({ left: '50px' }, { duration: 300, queue: false });
-          $("#terrama2-layerexplorer-bg").animate({ left: '50px' }, { duration: 300, queue: false });
-        } else {
-          $("#terrama2-layerexplorer").animate({ left: '230px' }, { duration: 300, queue: false });
-          $("#terrama2-layerexplorer-bg").animate({ left: '230px' }, { duration: 300, queue: false });
+        var active = $("#terrama2-bg").hasClass('active');
+        var boxActive = $("#terrama2-bg").attr('box');
+
+        $(".terrama2-left-content").removeClass('active');
+        $(".terrama2-left-content").animate({ width: '350px', left: '-350px' }, { duration: 300, queue: false });
+
+        $("#terrama2-bg").removeClass('active');
+        $("#terrama2-bg").animate({ width: '350px', left: '-350px' }, { duration: 300, queue: false });
+
+        if(boxActive !== id || !active) {
+          $("#terrama2-bg").addClass('active');
+          $("#terrama2-bg").attr('box', id);
+
+          if($("body").hasClass('sidebar-collapse')) {
+            $("#terrama2-bg").animate({ left: '50px' }, { duration: 300, queue: false });
+          } else {
+            $("#terrama2-bg").animate({ left: '230px' }, { duration: 300, queue: false });
+          }
         }
       }
     });
 
     $('.sidebar-toggle').on('click', function() {
-      if($("#terrama2-layerexplorer").css('left') !== '-350px') {
-        if($("#terrama2-layerexplorer").css('left') === '230px') {
-          $("#terrama2-layerexplorer").animate({ left: '50px' }, { duration: 250, queue: false });
-          $("#terrama2-layerexplorer-bg").animate({ left: '50px' }, { duration: 250, queue: false });
+      if($(".terrama2-left-content").hasClass('active')) {
+        var currentBox = $("#" + $("#terrama2-bg").attr('box')).attr('box');
+
+        if($("#" + currentBox).css('left') === '230px') {
+          $("#" + currentBox).animate({ left: '50px' }, { duration: 250, queue: false });
         } else {
-          $("#terrama2-layerexplorer").animate({ left: '230px' }, { duration: 400, queue: false });
-          $("#terrama2-layerexplorer-bg").animate({ left: '230px' }, { duration: 400, queue: false });
+          $("#" + currentBox).animate({ left: '230px' }, { duration: 400, queue: false });
+        }
+      }
+
+      if($("#terrama2-bg").hasClass('active')) {
+        if($("#terrama2-bg").css('left') === '230px') {
+          $("#terrama2-bg").animate({ left: '50px' }, { duration: 250, queue: false });
+        } else {
+          $("#terrama2-bg").animate({ left: '230px' }, { duration: 400, queue: false });
         }
       }
     });
