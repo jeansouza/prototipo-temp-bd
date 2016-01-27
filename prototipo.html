@@ -65,16 +65,6 @@
       margin-left: -15px;
     }
 
-    .terrama2-layerexplorer-checkboxx {
-      display: block;
-      margin-bottom: -27px !important;
-      margin-left: 20px;
-    }
-
-    .terrama2-layerexplorer-checkboxxspan- {
-      margin-left: 20px !important;
-    }
-
     .main-sidebar {
       padding-top: 83px !important;
     }
@@ -108,8 +98,23 @@
       background-image: url('icon_graphics.png');
     }
 
+    #terrama2-layerexplorer {
+      color: white;
+    }
+
     .sidebar-menu > li > a > span {
       padding-left: 22px;
+    }
+
+    #terrama2-bg {
+      width: 350px;
+      position: fixed;
+      height: 100%;
+      z-index: 500;
+      background: rgba(34,45,50,0.85);
+      left: -350px;
+      top: 0;
+      bottom: 0;
     }
 
     .terrama2-left-content {
@@ -143,18 +148,34 @@
 
     .fullmenu {
       width: calc(100% - 230px) !important;
-      -webkit-transition: width 0.3s ease-in-out;
-      -moz-transition: width 0.3s ease-in-out;
-      -o-transition: width 0.3s ease-in-out;
-      transition: width 0.3s ease-in-out;
     }
 
     #filtros-box {
       color: white;
     }
+
+    .content-header {
+      margin-top: 30px;
+    }
+
+    .content {
+      min-height: 0px !important;
+    }
+
+    #map {
+      position: absolute;
+      width: calc(100% - 50px);
+      height: calc(100% - 210px) !important;
+      min-height: calc(100% - 210px) !important;
+      max-height: calc(100% - 210px) !important;
+      -webkit-transition: width 0.3s ease-in-out;
+      -moz-transition: width 0.3s ease-in-out;
+      -o-transition: width 0.3s ease-in-out;
+      transition: width 0.3s ease-in-out;
+    }
     </style>
   </head>
-  <body class="skin-blue sidebar-mini wysihtml5-supported sidebar-collapse">
+  <body class="skin-blue sidebar-mini wysihtml5-supported sidebar-collapse fixed">
     <div class="wrapper">
 
       <header class="main-header">
@@ -512,24 +533,24 @@
             <span><i class="fa fa-minus"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Geoserver Local</span>
             <ul>
               <li data-layerid="topp:states" style="display: list-item;">
-                <input type="checkbox" class="terrama2-layerexplorer-checkboxx">
-                <span class="terrama2-layerexplorer-checkboxxspan-">USA Population</span>
+                <input type="checkbox" class="terrama2-layerexplorer-checkbox">
+                <span class="terrama2-layerexplorer-checkbox-span">USA Population</span>
               </li>
               <li data-layerid="nyc:nyc_roads" style="display: list-item;">
-                <input type="checkbox" class="terrama2-layerexplorer-checkboxx">
-                <span class="terrama2-layerexplorer-checkboxxspan-">nyc_roads</span>
+                <input type="checkbox" class="terrama2-layerexplorer-checkbox">
+                <span class="terrama2-layerexplorer-checkbox-span">nyc_roads</span>
               </li>
               <li data-layerid="focos:focos_20151213-14" style="display: list-item;">
-                <input type="checkbox" class="terrama2-layerexplorer-checkboxx">
-                <span class="terrama2-layerexplorer-checkboxxspan-">Focos de 13/12/2015 até 14/12/2015</span>
+                <input type="checkbox" class="terrama2-layerexplorer-checkbox">
+                <span class="terrama2-layerexplorer-checkbox-span">Focos de 13/12/2015 até 14/12/2015</span>
               </li>
               <li data-layerid="focos:focos_20151210-14" style="display: list-item;">
-                <input type="checkbox" class="terrama2-layerexplorer-checkboxx">
-                <span class="terrama2-layerexplorer-checkboxxspan-">Focos de 10/12/2015 até 14/12/2015</span>
+                <input type="checkbox" class="terrama2-layerexplorer-checkbox">
+                <span class="terrama2-layerexplorer-checkbox-span">Focos de 10/12/2015 até 14/12/2015</span>
               </li>
               <li data-layerid="brasil:ST_DNIT_Rodovias_SNV2015_03" style="display: list-item;">
-                <input type="checkbox" class="terrama2-layerexplorer-checkboxx">
-                <span class="terrama2-layerexplorer-checkboxxspan-">ST_DNIT_Rodovias_SNV2015_03</span>
+                <input type="checkbox" class="terrama2-layerexplorer-checkbox">
+                <span class="terrama2-layerexplorer-checkbox-span">ST_DNIT_Rodovias_SNV2015_03</span>
               </li>
             </ul>
           </li>
@@ -537,16 +558,16 @@
             <span><i class="fa fa-minus"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Camadas Base</span>
             <ul>
               <li data-layerid="mapquest_sat" style="display: list-item;">
-                <input type="checkbox" class="terrama2-layerexplorer-checkboxx" checked="">
-                <span class="terrama2-layerexplorer-checkboxxspan-">MapQuest Satélite</span>
+                <input type="checkbox" class="terrama2-layerexplorer-checkbox" checked="">
+                <span class="terrama2-layerexplorer-checkbox-span">MapQuest Satélite</span>
               </li>
               <li data-layerid="mapquest_osm" style="display: list-item;">
-                <input type="checkbox" class="terrama2-layerexplorer-checkboxx">
-                <span class="terrama2-layerexplorer-checkboxxspan-">MapQuest OSM</span>
+                <input type="checkbox" class="terrama2-layerexplorer-checkbox">
+                <span class="terrama2-layerexplorer-checkbox-span">MapQuest OSM</span>
               </li>
               <li data-layerid="osm" style="display: list-item;">
-                <input type="checkbox" class="terrama2-layerexplorer-checkboxx">
-                <span class="terrama2-layerexplorer-checkboxxspan-">Open Street Map</span>
+                <input type="checkbox" class="terrama2-layerexplorer-checkbox">
+                <span class="terrama2-layerexplorer-checkbox-span">Open Street Map</span>
               </li>
             </ul>
           </li>
@@ -1342,6 +1363,16 @@
       if($("#terrama2-bg").hasClass('active')) {
         ajustBoxesSize("terrama2-bg");
       }
+
+      if($("body").hasClass('sidebar-collapse')) {
+        $("#map").addClass('fullmenu');
+      } else {
+        $("#map").removeClass('fullmenu');
+      }
+
+      var interval = window.setInterval(function() { olMap.updateSize(); }, 10);
+
+      window.setTimeout(function() { clearInterval(interval); }, 300);
     });
 
     var closeBg = function() {
