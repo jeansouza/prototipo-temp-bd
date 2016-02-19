@@ -1,0 +1,374 @@
+/* AdminLTEQueimadas fonts paths adjustments */
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "OpenSans-Bold";
+  src: url("dist/fonts/OpenSans/opensans-700-webfont.eot");
+  src: url("dist/fonts/OpenSans/opensans-700-webfont.eot?#iefix") format("embedded-opentype"),
+       url("dist/fonts/OpenSans/opensans-700-webfont.woff") format("woff"),
+       url("dist/fonts/OpenSans/opensans-700-webfont.ttf") format("truetype"),
+       url("dist/fonts/OpenSans/opensans-700-webfont.svg#open_sansbold") format("svg");
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "OpenSans-ExtraBold";
+  src: url("dist/fonts/OpenSans/opensans-800-webfont.eot");
+  src: url("dist/fonts/OpenSans/opensans-800-webfont.eot?#iefix") format("embedded-opentype"),
+       url("dist/fonts/OpenSans/opensans-800-webfont.woff") format("woff"),
+       url("dist/fonts/OpenSans/opensans-800-webfont.ttf") format("truetype"),
+       url("dist/fonts/OpenSans/opensans-800-webfont.svg#open_sansextrabold") format("svg");
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "OpenSans-Light";
+  src: url("dist/fonts/OpenSans/opensans-300-webfont.eot");
+  src: url("dist/fonts/OpenSans/opensans-300-webfont.eot?#iefix") format("embedded-opentype"),
+       url("dist/fonts/OpenSans/opensans-300-webfont.woff") format("woff"),
+       url("dist/fonts/OpenSans/opensans-300-webfont.ttf") format("truetype"),
+       url("dist/fonts/OpenSans/opensans-300-webfont.svg#open_sanslight") format("svg");
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "OpenSans-Regular";
+  src: url("dist/fonts/OpenSans/opensans-400-webfont.eot");
+  src: url("dist/fonts/OpenSans/opensans-400-webfont.eot?#iefix") format("embedded-opentype"),
+       url("dist/fonts/OpenSans/opensans-400-webfont.woff") format("woff"),
+       url("dist/fonts/OpenSans/opensans-400-webfont.ttf") format("truetype"),
+       url("dist/fonts/OpenSans/opensans-400-webfont.svg#open_sansregular") format("svg");
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "OpenSans-Semibold";
+  src: url("dist/fonts/OpenSans/opensans-600-webfont.eot");
+  src: url("dist/fonts/OpenSans/opensans-600-webfont.eot?#iefix") format("embedded-opentype"),
+       url("dist/fonts/OpenSans/opensans-600-webfont.woff") format("woff"),
+       url("dist/fonts/OpenSans/opensans-600-webfont.ttf") format("truetype"),
+       url("dist/fonts/OpenSans/opensans-600-webfont.svg#open_sanssemibold") format("svg");
+}
+
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Regular'), url('dist/fonts/MyriadPro/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Myriad Pro Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Condensed'), url('dist/fonts/MyriadPro/MYRIADPRO-COND.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Myriad Pro Semibold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Semibold Italic'), url('dist/fonts/MyriadPro/MYRIADPRO-SEMIBOLDIT.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Myriad Pro Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Semibold'), url('dist/fonts/MyriadPro/MYRIADPRO-SEMIBOLD.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Myriad Pro Condensed Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Condensed Italic'), url('dist/fonts/MyriadPro/MYRIADPRO-CONDIT.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Myriad Pro Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Bold Italic'), url('dist/fonts/MyriadPro/MYRIADPRO-BOLDIT.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Myriad Pro Bold Condensed Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Bold Condensed Italic'), url('dist/fonts/MyriadPro/MYRIADPRO-BOLDCONDIT.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Myriad Pro Bold Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Bold Condensed'), url('dist/fonts/MyriadPro/MYRIADPRO-BOLDCOND.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Myriad Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Bold'), url('dist/fonts/MyriadPro/MYRIADPRO-BOLD.woff') format('woff');
+}
+
+/* BDQueimadas styles */
+
+#filter-box {
+  color: black;
+}
+
+.left-content-box {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  float: left;
+  z-index: 500;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 20px 0 20px;
+  top: 0;
+  bottom: 0;
+  width: 350px;
+  left: -350px;
+  margin-top: 300px;
+  height: calc(100% - 83px);
+  overflow: auto;
+}
+
+.fullscreen {
+  width: calc(100% - 50px);
+  left: -100%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+.fullmenu {
+  width: calc(100% - 230px) !important;
+}
+
+#left-content-box-background {
+  width: 350px;
+  position: fixed;
+  height: 100%;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.9);
+  left: -350px;
+  top: 0;
+  bottom: 0;
+}
+
+.cursor-crosshair { cursor: crosshair !important; }
+
+.cursor-move { cursor: move !important; }
+
+#welcome {
+  position: absolute;
+  left: 0;
+  z-index: 999999999;
+  width: 100%;
+  height: 720px;
+  margin-top: -54px;
+}
+
+#welcome > img {
+  float: left;
+}
+
+#welcome > #welcome-text {
+  color: white;
+  position: absolute;
+  right: 170px;
+  font-family: 'Myriad Pro Regular';
+  margin-top: 75px;
+  text-align: right;
+  width: 600px;
+}
+
+#welcome > #welcome-text > p.title {
+  font-size: 76px;
+  line-height: 76px;
+}
+
+#welcome > #welcome-text > p.text {
+  font-size: 23px;
+  line-height: 40px;
+}
+
+#welcome > #welcome-text > button {
+  width: 200px;
+  height: 70px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 20px;
+  outline: none;
+}
+
+@media only screen and (max-width: 991px) {
+  #welcome {
+    margin-top: -90px !important;
+  }
+}
+
+@media only screen and (max-height: 724px) and (min-width: 1120px) {
+  #welcome > img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-height: 724px) and (max-width: 1119px), (min-height: 725px) {
+  #welcome > img {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  #welcome > #welcome-text {
+    margin-top: 30px;
+  }
+
+  #welcome > #welcome-text > p.title {
+    font-size: 40px !important;
+    line-height: 40px !important;
+  }
+
+  #welcome > #welcome-text > p.text {
+    font-size: 18px !important;
+    line-height: 30px !important;
+  }
+
+  #welcome > #welcome-text > button {
+    width: 130px !important;
+    height: 45px !important;
+    font-size: 15px !important;
+  }
+}
+
+@media only screen and (min-height: 601px) and (max-height: 830px) {
+  #welcome > #welcome-text > p.title {
+    font-size: 50px !important;
+    line-height: 50px !important;
+  }
+
+  #welcome > #welcome-text > p.text {
+    font-size: 20px !important;
+    line-height: 35px !important;
+  }
+
+  #welcome > #welcome-text > button {
+    width: 150px !important;
+    height: 50px !important;
+    font-size: 17px !important;
+  }
+}
+
+/* TerraMA2Components styles */
+
+#terrama2-layerexplorer {
+  color: black;
+}
+
+#terrama2-map {
+  position: absolute;
+  width: calc(100% - 50px);
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+/* AdminLTEQueimadas general adjustments */
+
+.sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > a > span:not(.pull-right),
+.sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > .treeview-menu {
+  display: none !important;
+}
+
+.sidebar-menu > li > a {
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: 14px;
+  background-size: 14px;
+}
+
+.sidebar-menu > li > a:hover {
+  background-repeat: no-repeat !important;
+  background-position: 14px !important;
+  background-size: 14px !important;
+}
+
+#layerexplorer-btn > a {
+  background-image: url('icon_layers.png');
+}
+
+#layerexplorer-btn > a:hover {
+  background-image: url('icon_layers_hover.png');
+}
+
+#filters-btn > a {
+  background-image: url('icon_calendar.png');
+}
+
+#filters-btn > a:hover {
+  background-image: url('icon_calendar_hover.png');
+}
+
+#tables-btn > a {
+  background-image: url('icon_table.png');
+}
+
+#tables-btn > a:hover {
+  background-image: url('icon_table_hover.png');
+}
+
+#graphs-btn > a {
+  background-image: url('icon_graphics.png');
+}
+
+#graphs-btn > a: {
+  background-image: url('icon_graphics.png');
+}
+
+.sidebar-menu > li > a > span {
+  padding-left: 22px;
+}
+
+.skin-queimadas .main-header #gov-header #header input.searchButton{background:url("dist/img/sprite.png") 0 2px;}
+
+.skin-queimadas .main-header #gov-header #header #social-icons li a{background:url("dist/img/sprite.png");}
+
+.skin-queimadas .main-header #gov-header #header #logo #portal-title {
+  background: url("dist/img/logo_queimadas.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.skin-queimadas .main-header .logo .logo-lg, .skin-queimadas .main-header .logo .logo-mini{background-image:url("dist/img/logo_bd.png");}
+
+.content {
+  min-height: 0px !important;
+  padding-top: 0px !important;
+}
+
+.skin-queimadas .content-header { z-index: 500 !important; }

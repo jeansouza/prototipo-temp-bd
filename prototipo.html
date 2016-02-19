@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="dist/css/skins/skin-queimadas.min.css">
     <!-- iCheck -->
     <link rel="stylesheet" href="plugins/iCheck/flat/blue.css">
     <!-- Morris chart -->
@@ -41,6 +41,9 @@
 
     <link rel="stylesheet" href="jquery.mCustomScrollbar.css" type="text/css">
 
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="terrama2.css" type="text/css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -48,269 +51,115 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <style>
-    .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > a > span:not(.pull-right),
-    .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > .treeview-menu {
-      display: none !important;
-    }
-
-    .logo-mini {
-      height: 100%;
-      background-image: url('lit.png');
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .logo-lg {
-      height: 100%;
-      background-image: url('big.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      margin-left: -15px;
-    }
-
-    .sidebar-menu > li > a {
-      height: 44px;
-      background-repeat: no-repeat;
-      background-position: 14px;
-      background-size: 14px;
-    }
-
-    .sidebar-menu > li > a:hover {
-      background-repeat: no-repeat !important;
-      background-position: 14px !important;
-      background-size: 14px !important;
-    }
-
-    #btn-terrama2-layerexplorer > a {
-      background-image: url('icon_layers.png');
-    }
-
-    #btn-terrama2-layerexplorer > a:hover {
-      background-image: url('icon_layers_hover.png');
-    }
-
-    #filtros > a {
-      background-image: url('icon_calendar.png');
-    }
-
-    #filtros > a:hover {
-      background-image: url('icon_calendar_hover.png');
-    }
-
-    #tabelas > a {
-      background-image: url('icon_table.png');
-    }
-
-    #tabelas > a:hover {
-      background-image: url('icon_table_hover.png');
-    }
-
-    #graficos > a {
-      background-image: url('icon_graphics.png');
-    }
-
-    #graficos > a:hover {
-      background-image: url('icon_graphics_hover.png');
-    }
-
-    #terrama2-layerexplorer {
-      color: black;
-    }
-
-    .sidebar-menu > li > a > span {
-      padding-left: 22px;
-    }
-
-    #terrama2-bg {
-      width: 350px;
-      position: fixed;
-      height: 100%;
-      z-index: 500;
-      background: rgba(255, 255, 255, 0.9);
-      left: -350px;
-      top: 0;
-      bottom: 0;
-    }
-
-    .terrama2-left-content {
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      position: absolute;
-      float: left;
-      z-index: 500;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      padding: 0 20px 0 20px;
-      top: 0;
-      bottom: 0;
-      width: 350px;
-      left: -350px;
-      margin-top: 83px;
-      height: calc(100% - 83px);
-      overflow: auto;
-    }
-
-    .fullscreen {
-      width: calc(100% - 50px);
-      left: -100%;
-      -webkit-transition: width 0.3s ease-in-out;
-      -moz-transition: width 0.3s ease-in-out;
-      -o-transition: width 0.3s ease-in-out;
-      transition: width 0.3s ease-in-out;
-    }
-
-    .fullmenu {
-      width: calc(100% - 230px) !important;
-    }
-
-    #filtros-box {
-      color: black;
-    }
-
-    .content {
-      min-height: 0px !important;
-      padding-top: 0px !important;
-    }
-
-    #map {
-      position: absolute;
-      width: calc(100% - 50px);
-      -webkit-transition: width 0.3s ease-in-out;
-      -moz-transition: width 0.3s ease-in-out;
-      -o-transition: width 0.3s ease-in-out;
-      transition: width 0.3s ease-in-out;
-    }
-
-    .nano .nano-pane {
-      background: rgb(34,45,50) !important;
-    }
-
-    .nano .nano-slider {
-      background: rgb(86, 99, 105) !important;
-    }
-
-    .nano-content {
-      padding: 0 20px 0 20px;
-    }
-    </style>
   </head>
   <body class="skin-queimadas sidebar-mini wysihtml5-supported">
     <div class="wrapper">
 
       <header class="main-header">
-    <div id="gov-header">
-      <div id="gov-identity-bar">
-        <div id="barra-identidade">
-          <div id="barra-brasil">
-            <div id="wrapper-barra-brasil">
-              <div class="brasil-flag">
-                <a href="http://brasil.gov.br" class="link-barra">Brasil</a>
+        <div id="gov-header">
+          <div id="gov-identity-bar">
+            <div id="barra-identidade">
+              <div id="barra-brasil">
+                <div id="wrapper-barra-brasil">
+                  <div class="brasil-flag">
+                    <a href="http://brasil.gov.br" class="link-barra">Brasil</a>
+                  </div>
+                  <span class="acesso-info">
+                    <a href="http://brasil.gov.br/barra#acesso-informacao" class="link-barra">Acesso à informação</a>
+                  </span>
+                  <nav>
+                    <ul class="list">
+                      <li><a href="#" id="menu-icon"></a></li>
+                      <li class="list-item first"><a href="http://brasil.gov.br/barra#participe" class="link-barra">Participe</a></li>
+                      <li class="list-item"><a href="http://www.servicos.gov.br/?pk_campaign=barrabrasil" class="link-barra" id="barra-brasil-orgao">Serviços</a></li>
+                      <li class="list-item"><a href="http://www.planalto.gov.br/legislacao" class="link-barra">Legislação</a></li>
+                      <li class="list-item last last-item"><a href="http://brasil.gov.br/barra#orgaos-atuacao-canais" class="link-barra">Canais</a></li>
+                    </ul>
+                  </nav>
+                </div>
               </div>
-              <span class="acesso-info">
-                <a href="http://brasil.gov.br/barra#acesso-informacao" class="link-barra">Acesso à informação</a>
-              </span>
-              <nav>
-                <ul class="list">
-                  <li><a href="#" id="menu-icon"></a></li>
-                  <li class="list-item first"><a href="http://brasil.gov.br/barra#participe" class="link-barra">Participe</a></li>
-                  <li class="list-item"><a href="http://www.servicos.gov.br/?pk_campaign=barrabrasil" class="link-barra" id="barra-brasil-orgao">Serviços</a></li>
-                  <li class="list-item"><a href="http://www.planalto.gov.br/legislacao" class="link-barra">Legislação</a></li>
-                  <li class="list-item last last-item"><a href="http://brasil.gov.br/barra#orgaos-atuacao-canais" class="link-barra">Canais</a></li>
-                </ul>
-              </nav>
             </div>
+            <script src="http://barra.brasil.gov.br/barra.js" type="text/javascript" defer="" async=""></script>
           </div>
-        </div>
-        <script src="http://barra.brasil.gov.br/barra.js" type="text/javascript" defer="" async=""></script>
-      </div>
-      <div id="accessibility-wrapper">
-        <ul id="accessibility">
-          <li>
-            <a accesskey="1" href="#acontent" id="link-conteudo">
-              Ir para o conte&uacute;do
-              <span>1</span>
-            </a>
-          </li>
-          <li>
-            <a accesskey="2" href="#anavigation" id="link-navegacao">
-              Ir para o menu
-              <span>2</span>
-            </a>
-          </li>
-          <li>
-            <a accesskey="3" href="#SearchableText" id="link-buscar">
-              Ir para a busca
-              <span>3</span>
-            </a>
-          </li>
-          <li>
-            <a accesskey="4" href="#afooter" id="link-rodape">
-              Ir para o rodap&eacute;
-              <span>4</span>
-            </a>
-          </li>
-        </ul>
-        <ul id="language">
-          <li class="language-es">
-            <a href="#">Espa&#241;ol</a>
-          </li>
-          <li class="language-en">
-            <a href="#">English</a>
-          </li>
-        </ul>
-        <ul id="portal-siteactions">
-          <li>
-            <a href="#">Acessibilidade</a>
-          </li>
-          <li>
-            <a href="#">Alto Contraste</a>
-          </li>
-          <li>
-            <a href="#">Mapa do Site</a>
-          </li>
-        </ul>
-      </div>
-      <div id="header" role="banner">
-        <div>
-          <div id="logo">
-            <a href="#" title="#">
-              <span id="portal-title"></span>
-            </a>
-          </div>
-          <div id="portal-searchbox" role="search">
-            <form>
-              <input type="text" id="searchGadget" class="searchField" accesskey="3" placeholder="Buscar no portal" title="Buscar no portal" size="18" name="SearchableText" autocomplete="off"/>
-              <input type="submit" title="Buscar" alt="Buscar" class="searchButton"/>
-            </form>
-          </div>
-          <div id="social-icons">
-            <ul>
+          <div id="accessibility-wrapper">
+            <ul id="accessibility">
               <li>
-                <a href="#" title="Facebook" alt="Facebook" class="facebook"></a>
+                <a accesskey="1" href="#acontent" id="link-conteudo">
+                  Ir para o conte&uacute;do
+                  <span>1</span>
+                </a>
               </li>
               <li>
-                <a href="#" title="Twitter" alt="Twitter" class="twitter"></a>
+                <a accesskey="2" href="#anavigation" id="link-navegacao">
+                  Ir para o menu
+                  <span>2</span>
+                </a>
               </li>
               <li>
-                <a href="#" title="Youtube" alt="Youtube" class="youtube"></a>
+                <a accesskey="3" href="#SearchableText" id="link-buscar">
+                  Ir para a busca
+                  <span>3</span>
+                </a>
               </li>
               <li>
-                <a href="#" title="Flickr" alt="Flickr" class="flickr"></a>
+                <a accesskey="4" href="#afooter" id="link-rodape">
+                  Ir para o rodap&eacute;
+                  <span>4</span>
+                </a>
+              </li>
+            </ul>
+            <ul id="language">
+              <li class="language-es">
+                <a href="#">Espa&#241;ol</a>
+              </li>
+              <li class="language-en">
+                <a href="#">English</a>
+              </li>
+            </ul>
+            <ul id="portal-siteactions">
+              <li>
+                <a href="#">Acessibilidade</a>
+              </li>
+              <li>
+                <a href="#">Alto Contraste</a>
+              </li>
+              <li>
+                <a href="#">Mapa do Site</a>
               </li>
             </ul>
           </div>
+          <div id="header" role="banner">
+            <div>
+              <div id="logo">
+                <a href="#" title="#">
+                  <span id="portal-title"></span>
+                </a>
+              </div>
+              <div id="portal-searchbox" role="search">
+                <form>
+                  <input type="text" id="searchGadget" class="searchField" accesskey="3" placeholder="Buscar no portal" title="Buscar no portal" size="18" name="SearchableText" autocomplete="off"/>
+                  <input type="submit" title="Buscar" alt="Buscar" class="searchButton"/>
+                </form>
+              </div>
+              <div id="social-icons">
+                <ul>
+                  <li>
+                    <a href="#" title="Facebook" alt="Facebook" class="facebook"></a>
+                  </li>
+                  <li>
+                    <a href="#" title="Twitter" alt="Twitter" class="twitter"></a>
+                  </li>
+                  <li>
+                    <a href="#" title="Youtube" alt="Youtube" class="youtube"></a>
+                  </li>
+                  <li>
+                    <a href="#" title="Flickr" alt="Flickr" class="flickr"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-
-
-
 
         <!-- Logo -->
         <a href="#" class="logo">
@@ -322,7 +171,7 @@
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
           <!-- Sidebar toggle button-->
-          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button" id="main-sidebar-toggle" style="display: none;">
             <span class="sr-only">Toggle navigation</span>
           </a>
           <div class="navbar-custom-menu">
@@ -552,14 +401,11 @@
                   </li>
                 </ul>
               </li>
-              <!-- Control Sidebar Toggle Button -->
-              <li>
-                <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-              </li>
             </ul>
           </div>
         </nav>
       </header>
+
       <!-- Left side column. contains the logo and sidebar -->
       <aside class="main-sidebar">
         <!-- sidebar: style can be found in sidebar.less -->
@@ -587,22 +433,22 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-            <li id="btn-terrama2-layerexplorer" box="terrama2-layerexplorer">
+            <li id="layerexplorer-btn" box="terrama2-layerexplorer">
               <a href="#">
                 <span>Camadas</span>
               </a>
             </li>
-            <li id="filtros" box="filtros-box">
+            <li id="filters-btn" box="filtros-box">
               <a href="#">
                 <span>Filtros</span>
               </a>
             </li>
-            <li id="tabelas" box="table-box">
+            <li id="tables-btn" box="table-box">
               <a href="#">
                 <span>Tabelas</span>
               </a>
             </li>
-            <li id="graficos" box="graficos-box">
+            <li id="graphs-btn" box="graficos-box">
               <a href="#">
                 <span>Gr&aacute;ficos</span>
               </a>
@@ -612,9 +458,9 @@
         <!-- /.sidebar -->
       </aside>
 
-      <div id="terrama2-bg"></div>
+      <div id="left-content-box-background"></div>
 
-      <div class="terrama2-left-content scroll-pane" id="terrama2-layerexplorer">
+      <div class="left-content-box scroll-pane" id="terrama2-layerexplorer">
         <div class="terrama2-leftbox-content">
           <div class="terrama2-leftbox-header"><h2>Camadas</h2></div>
           <li data-layerid="server" class="parent_li">
@@ -662,7 +508,7 @@
         </div>
       </div>
 
-      <div class="terrama2-left-content" id="filtros-box">
+      <div class="left-content-box" id="filtros-box">
         <h3 class="box-title">Filtros</h3>
         <form role="form">
           <div class="form-group">
@@ -686,7 +532,7 @@
         </form>
       </div>
 
-      <div class="terrama2-left-content fullscreen" id="table-box">
+      <div class="left-content-box fullscreen" id="table-box">
         <br/>
         <div class="box">
           <div class="box-header">
@@ -1122,7 +968,7 @@
         </div>
       </div>
 
-      <div class="terrama2-left-content fullscreen" id="graficos-box">
+      <div class="left-content-box fullscreen" id="graficos-box">
         <br/>
         <div class="box box-default">
           <div class="box-header with-border">
@@ -1167,9 +1013,17 @@
 
         <!-- Main content -->
         <section class="content">
+          <div id="welcome">
+            <img src="dist/img/welcome.jpg">
+            <div id="welcome-text">
+              <p class="title">Bem-Vindo ao BDQueimadas</p>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+              <button class="sidebar-toggle comecar" data-toggle="offcanvas" role="button">Começar</button>
+            </div>
+          </div>
           <!-- Small boxes (Stat box) -->
           <div class="row">
-            <div id="map" class="fullmenu"></div>
+            <div id="terrama2-map" class="terrama2-map fullmenu cursor-move"></div>
           </div>
 
         </section><!-- /.content -->
@@ -1474,7 +1328,12 @@
 
     <script src="ol.js" type="text/javascript"></script>
 
+
+    <script type="text/javascript" src="dist/js/bdqueimadas.js"></script>
+
     <script>
+    BDQueimadas.obj.init();
+
     var olMap = new ol.Map({
       renderer: 'canvas',
       layers: [
@@ -1485,7 +1344,7 @@
           visible: true
         })
       ],
-      target: 'map',
+      target: 'terrama2-map',
       view: new ol.View({
         projection: 'EPSG:4326',
         center: [-55, -15],
@@ -1493,6 +1352,7 @@
       })
     });
 
+    /*
     $(".sidebar-menu > li").on('click', function(event) {
       event.preventDefault();
 
@@ -1510,8 +1370,8 @@
           openContentBox(box);
         }
       } else {
-        var active = $("#terrama2-bg").hasClass('active');
-        var boxActive = $("#terrama2-bg").attr('box');
+        var active = $("#left-content-box-background").hasClass('active');
+        var boxActive = $("#left-content-box-background").attr('box');
 
         closeAllContentBoxes();
         closeBg();
@@ -1523,19 +1383,19 @@
     });
 
     $('.sidebar-toggle').on('click', function() {
-      if($(".terrama2-left-content").hasClass('active')) {
-        var currentBox = $("#" + $("#terrama2-bg").attr('box')).attr('box');
+      if($(".left-content-box").hasClass('active')) {
+        var currentBox = $("#" + $("#left-content-box-background").attr('box')).attr('box');
         ajustBoxesSize(currentBox);
       }
 
-      if($("#terrama2-bg").hasClass('active')) {
-        ajustBoxesSize("terrama2-bg");
+      if($("#left-content-box-background").hasClass('active')) {
+        ajustBoxesSize("left-content-box-background");
       }
 
       if($("body").hasClass('sidebar-collapse')) {
-        $("#map").addClass('fullmenu');
+        $("#terrama2-map").addClass('fullmenu');
       } else {
-        $("#map").removeClass('fullmenu');
+        $("#terrama2-map").removeClass('fullmenu');
       }
 
       var interval = window.setInterval(function() { olMap.updateSize(); }, 10);
@@ -1544,15 +1404,15 @@
     });
 
     var closeBg = function() {
-      $("#terrama2-bg").removeClass('active');
-      $("#terrama2-bg").animate({ width: '350px', left: '-350px' }, { duration: 300, queue: false });
-      $("#terrama2-bg").attr('box', '');
+      $("#left-content-box-background").removeClass('active');
+      $("#left-content-box-background").animate({ width: '350px', left: '-350px' }, { duration: 300, queue: false });
+      $("#left-content-box-background").attr('box', '');
     }
 
     var closeAllContentBoxes = function() {
-      $(".terrama2-left-content").removeClass('active');
-      $(".terrama2-left-content").removeClass('fullmenu');
-      $(".terrama2-left-content").animate({ left: '-100%' }, { duration: 300, queue: false });
+      $(".left-content-box").removeClass('active');
+      $(".left-content-box").removeClass('fullmenu');
+      $(".left-content-box").animate({ left: '-100%' }, { duration: 300, queue: false });
     }
 
     var ajustBoxesSize = function(id) {
@@ -1581,9 +1441,9 @@
         left = '230px';
       }
 
-      $("#terrama2-bg").addClass('active');
-      $("#terrama2-bg").attr('box', box);
-      $("#terrama2-bg").animate({ width: width, left: left }, { duration: 300, queue: false });
+      $("#left-content-box-background").addClass('active');
+      $("#left-content-box-background").attr('box', box);
+      $("#left-content-box-background").animate({ width: width, left: left }, { duration: 300, queue: false });
     }
 
     var openContentBox = function(box) {
@@ -1595,7 +1455,7 @@
         if($("#" + box).hasClass('fullscreen')) $("#" + box).addClass('fullmenu');
         $("#" + box).animate({ left: '230px' }, { duration: 300, queue: false });
       }
-    }
+    }*/
 
     $('#example2').DataTable({
       "paging": true,
