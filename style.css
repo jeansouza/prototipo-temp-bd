@@ -231,13 +231,13 @@
   }
 }
 
-@media only screen and (max-height: 724px) and (min-width: 1120px) {
+@media only screen and (max-height: 1012px) and (min-width: 1301px) {
   #welcome > img {
     width: 100%;
   }
 }
 
-@media only screen and (max-height: 724px) and (max-width: 1119px), (min-height: 725px) {
+@media only screen and (max-height: 1012px) and (max-width: 1300px), (min-height: 1013px) {
   #welcome > img {
     height: 100%;
   }
