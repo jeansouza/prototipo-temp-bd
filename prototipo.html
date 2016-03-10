@@ -81,7 +81,7 @@
             </div>
             <script src="http://barra.brasil.gov.br/barra.js" type="text/javascript" defer="" async=""></script>
           </div>
-          <div id="accessibility-wrapper">
+          <!--<div id="accessibility-wrapper">
             <ul id="accessibility">
               <li>
                 <a accesskey="1" href="#acontent" id="link-conteudo">
@@ -127,7 +127,7 @@
                 <a href="#">Mapa do Site</a>
               </li>
             </ul>
-          </div>
+          </div>-->
           <div id="header" role="banner">
             <div>
               <div id="logo">
@@ -176,230 +176,171 @@
           </a>
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-              <!-- Messages: style can be found in dropdown.less-->
-              <li class="dropdown messages-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-envelope-o"></i>
-                  <span class="label label-success">4</span>
-                </a>
+              <li id="continents-dropdown" class="dropdown notifications-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="continents-title">Continentes</a>
                 <ul class="dropdown-menu">
-                  <li class="header">You have 4 messages</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                      <li><!-- start message -->
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            Support Team
-                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li><!-- end message -->
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            AdminLTE Design Team
-                            <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            Developers
-                            <small><i class="fa fa-clock-o"></i> Today</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            Sales Department
-                            <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            Reviewers
-                            <small><i class="fa fa-clock-o"></i> 2 days</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="footer"><a href="#">See All Messages</a></li>
-                </ul>
+                            <li>
+                              <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"><ul class="menu" id="continents" style="overflow: hidden; width: 100%; height: 200px;">
+
+                                  <li class="continent-item" id="Antartica">
+                                    <a href="#">
+                                      Antartica
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="Australia and New Zealand">
+                                    <a href="#">
+                                      Australia and New Zealand
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="Caribbean">
+                                    <a href="#">
+                                      Caribbean
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="Central America">
+                                    <a href="#">
+                                      Central America
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="Central Asia">
+                                    <a href="#">
+                                      Central Asia
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="Eastern Africa">
+                                    <a href="#">
+                                      Eastern Africa
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="Eastern Asia">
+                                    <a href="#">
+                                      Eastern Asia
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="Eastern Europe">
+                                    <a href="#">
+                                      Eastern Europe
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="Melanesia">
+                                    <a href="#">
+                                      Melanesia
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="Micronesia">
+                                    <a href="#">
+                                      Micronesia
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="Middle Africa">
+                                    <a href="#">
+                                      Middle Africa
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="Northern Africa">
+                                    <a href="#">
+                                      Northern Africa
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="Northern America">
+                                    <a href="#">
+                                      Northern America
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="Northern Europe">
+                                    <a href="#">
+                                      Northern Europe
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="Polynesia">
+                                    <a href="#">
+                                      Polynesia
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="South America">
+                                    <a href="#">
+                                      South America
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="South-Eastern Asia">
+                                    <a href="#">
+                                      South-Eastern Asia
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="Southern Africa">
+                                    <a href="#">
+                                      Southern Africa
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="Southern Asia">
+                                    <a href="#">
+                                      Southern Asia
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="Southern Europe">
+                                    <a href="#">
+                                      Southern Europe
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="Western Africa">
+                                    <a href="#">
+                                      Western Africa
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="Western Asia">
+                                    <a href="#">
+                                      Western Asia
+                                    </a>
+                                  </li>
+
+                                  <li class="continent-item" id="Western Europe">
+                                    <a href="#">
+                                      Western Europe
+                                    </a>
+                                  </li>
+
+                              </ul><div class="slimScrollBar" style="width: 3px; position: absolute; top: 108px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 42.4178px; background: rgb(0, 0, 0);"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div>
+                            </li>
+                          </ul>
               </li>
-              <!-- Notifications: style can be found in dropdown.less -->
-              <li class="dropdown notifications-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-bell-o"></i>
-                  <span class="label label-warning">10</span>
-                </a>
+              <li class="sparator">></li>
+              <li id="countries-dropdown" class="dropdown notifications-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="countries-title">Países</a>
                 <ul class="dropdown-menu">
-                  <li class="header">You have 10 notifications</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may cause design problems
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-users text-red"></i> 5 new members joined
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-user text-red"></i> You changed your username
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="footer"><a href="#">View all</a></li>
-                </ul>
+                            <li>
+                              <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"><ul class="menu" id="countries" style="overflow: hidden; width: 100%; height: 200px;"><li class="country-item" id="12"><a href="#">Argentina</a></li><li class="country-item" id="28"><a href="#">Bolivia</a></li><li class="country-item" id="33"><a href="#">Brazil</a></li><li class="country-item" id="48"><a href="#">Chile</a></li><li class="country-item" id="53"><a href="#">Colombia</a></li><li class="country-item" id="68"><a href="#">Ecuador</a></li><li class="country-item" id="75"><a href="#">Falkland Islands</a></li><li class="country-item" id="80"><a href="#">French Guiana</a></li><li class="country-item" id="98"><a href="#">Guyana</a></li><li class="country-item" id="177"><a href="#">Paraguay</a></li><li class="country-item" id="178"><a href="#">Peru</a></li><li class="country-item" id="212"><a href="#">South Georgia and the South Sandwich Islands</a></li><li class="country-item" id="219"><a href="#">Suriname</a></li><li class="country-item" id="245"><a href="#">Uruguay</a></li><li class="country-item" id="249"><a href="#">Venezuela</a></li></ul><div class="slimScrollBar" style="width: 3px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 65.0407px; background: rgb(0, 0, 0);"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div>
+                            </li>
+                          </ul>
               </li>
-              <!-- Tasks: style can be found in dropdown.less -->
-              <li class="dropdown tasks-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-flag-o"></i>
-                  <span class="label label-danger">9</span>
-                </a>
+              <li class="sparator">></li>
+              <li id="states-dropdown" class="dropdown notifications-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="states-title">Estados</a>
                 <ul class="dropdown-menu">
-                  <li class="header">You have 9 tasks</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                      <li><!-- Task item -->
-                        <a href="#">
-                          <h3>
-                            Design some buttons
-                            <small class="pull-right">20%</small>
-                          </h3>
-                          <div class="progress xs">
-                            <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                              <span class="sr-only">20% Complete</span>
-                            </div>
-                          </div>
-                        </a>
-                      </li><!-- end task item -->
-                      <li><!-- Task item -->
-                        <a href="#">
-                          <h3>
-                            Create a nice theme
-                            <small class="pull-right">40%</small>
-                          </h3>
-                          <div class="progress xs">
-                            <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                              <span class="sr-only">40% Complete</span>
-                            </div>
-                          </div>
-                        </a>
-                      </li><!-- end task item -->
-                      <li><!-- Task item -->
-                        <a href="#">
-                          <h3>
-                            Some task I need to do
-                            <small class="pull-right">60%</small>
-                          </h3>
-                          <div class="progress xs">
-                            <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                              <span class="sr-only">60% Complete</span>
-                            </div>
-                          </div>
-                        </a>
-                      </li><!-- end task item -->
-                      <li><!-- Task item -->
-                        <a href="#">
-                          <h3>
-                            Make beautiful transitions
-                            <small class="pull-right">80%</small>
-                          </h3>
-                          <div class="progress xs">
-                            <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                              <span class="sr-only">80% Complete</span>
-                            </div>
-                          </div>
-                        </a>
-                      </li><!-- end task item -->
-                    </ul>
-                  </li>
-                  <li class="footer">
-                    <a href="#">View all tasks</a>
-                  </li>
-                </ul>
-              </li>
-              <!-- User Account: style can be found in dropdown.less -->
-              <li class="dropdown user user-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                  <span class="hidden-xs">Jean Souza</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <!-- User image -->
-                  <li class="user-header">
-                    <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                    <p>
-                      Jean Souza - Web Developer
-                      <small>Member since Nov. 2012</small>
-                    </p>
-                  </li>
-                  <!-- Menu Body -->
-                  <li class="user-body">
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Followers</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Sales</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Friends</a>
-                    </div>
-                  </li>
-                  <!-- Menu Footer-->
-                  <li class="user-footer">
-                    <div class="pull-left">
-                      <a href="#" class="btn btn-default btn-flat">Profile</a>
-                    </div>
-                    <div class="pull-right">
-                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                    </div>
-                  </li>
-                </ul>
+                            <li>
+                              <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"><ul class="menu" id="states" style="overflow: hidden; width: 100%; height: 200px;"><li class="state-item" id="3470"><a href="#">Acre</a></li><li class="state-item" id="3471"><a href="#">Alagoas</a></li><li class="state-item" id="3473"><a href="#">Amapá</a></li><li class="state-item" id="3472"><a href="#">Amazonas</a></li><li class="state-item" id="3474"><a href="#">Bahia</a></li><li class="state-item" id="3475"><a href="#">Ceará</a></li><li class="state-item" id="3476"><a href="#">Distrito Federal</a></li><li class="state-item" id="3477"><a href="#">Espírito Santo</a></li><li class="state-item" id="3478"><a href="#">Goiás</a></li><li class="state-item" id="3479"><a href="#">Maranhão</a></li><li class="state-item" id="3482"><a href="#">Mato Grosso</a></li><li class="state-item" id="3481"><a href="#">Mato Grosso do Sul</a></li><li class="state-item" id="3480"><a href="#">Minas Gerais</a></li><li class="state-item" id="3483"><a href="#">Pará</a></li><li class="state-item" id="3484"><a href="#">Paraíba</a></li><li class="state-item" id="3487"><a href="#">Paraná</a></li><li class="state-item" id="3485"><a href="#">Pernambuco</a></li><li class="state-item" id="3486"><a href="#">Piauí</a></li><li class="state-item" id="3488"><a href="#">Rio de Janeiro</a></li><li class="state-item" id="3489"><a href="#">Rio Grande do Norte</a></li><li class="state-item" id="3492"><a href="#">Rio Grande do Sul</a></li><li class="state-item" id="3490"><a href="#">Rondônia</a></li><li class="state-item" id="3491"><a href="#">Roraima</a></li><li class="state-item" id="3493"><a href="#">Santa Catarina</a></li><li class="state-item" id="3495"><a href="#">São Paulo</a></li><li class="state-item" id="3494"><a href="#">Sergipe</a></li><li class="state-item" id="3496"><a href="#">Tocantins</a></li></ul><div class="slimScrollBar" style="width: 3px; position: absolute; top: 112px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 36.1337px; background: rgb(0, 0, 0);"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div>
+                            </li>
+                          </ul>
               </li>
               <li>
                 <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>

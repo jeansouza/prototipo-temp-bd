@@ -126,11 +126,10 @@
   src: local('Myriad Pro Bold'), url('dist/fonts/MyriadPro/MYRIADPRO-BOLD.woff') format('woff');
 }
 
+
 /* BDQueimadas styles */
 
-#filter-box {
-  color: black;
-}
+#filter-box { color: black; }
 
 .left-content-box {
   -webkit-touch-callout: none;
@@ -150,8 +149,8 @@
   bottom: 0;
   width: 350px;
   left: -350px;
-  margin-top: 300px;
-  height: calc(100% - 83px);
+  margin-top: 286px;
+  height: calc(100% - 318px);
   overflow: auto;
 }
 
@@ -164,9 +163,7 @@
   transition: width 0.3s ease-in-out;
 }
 
-.fullmenu {
-  width: calc(100% - 230px) !important;
-}
+.fullmenu { width: calc(100% - 230px) !important; }
 
 #left-content-box-background {
   width: 350px;
@@ -192,9 +189,7 @@
   margin-top: -54px;
 }
 
-#welcome > img {
-  float: left;
-}
+#welcome > img { float: left; }
 
 #welcome > #welcome-text {
   color: white;
@@ -283,11 +278,16 @@
   }
 }
 
+.nav > .sparator {
+  padding: 10px 4px;
+  height: 50px;
+  font-weight: 900;
+  font-size: 22px;
+}
+
 /* TerraMA2Components styles */
 
-#terrama2-layerexplorer {
-  color: black;
-}
+#terrama2-layerexplorer { color: black; }
 
 #terrama2-map {
   position: absolute;
@@ -300,10 +300,7 @@
 
 /* AdminLTEQueimadas general adjustments */
 
-.sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > a > span:not(.pull-right),
-.sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > .treeview-menu {
-  display: none !important;
-}
+.sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > a > span:not(.pull-right), .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > .treeview-menu { display: none !important; }
 
 .sidebar-menu > li > a {
   height: 44px;
@@ -318,41 +315,23 @@
   background-size: 14px !important;
 }
 
-#layerexplorer-btn > a {
-  background-image: url('icon_layers.png');
-}
+#layerexplorer-btn > a { background-image: url('icon_layers.png'); }
 
-#layerexplorer-btn > a:hover {
-  background-image: url('icon_layers_hover.png');
-}
+#layerexplorer-btn > a:hover { background-image: url('icon_layers_hover.png'); }
 
-#filters-btn > a {
-  background-image: url('icon_calendar.png');
-}
+#filters-btn > a { background-image: url('icon_calendar.png'); }
 
-#filters-btn > a:hover {
-  background-image: url('icon_calendar_hover.png');
-}
+#filters-btn > a:hover { background-image: url('icon_calendar_hover.png'); }
 
-#tables-btn > a {
-  background-image: url('icon_table.png');
-}
+#tables-btn > a { background-image: url('icon_table.png'); }
 
-#tables-btn > a:hover {
-  background-image: url('icon_table_hover.png');
-}
+#tables-btn > a:hover { background-image: url('icon_table_hover.png'); }
 
-#graphs-btn > a {
-  background-image: url('icon_graphics.png');
-}
+#graphs-btn > a { background-image: url('icon_graphics.png'); }
 
-#graphs-btn > a: {
-  background-image: url('icon_graphics.png');
-}
+#graphs-btn > a: { background-image: url('icon_graphics.png'); }
 
-.sidebar-menu > li > a > span {
-  padding-left: 22px;
-}
+.sidebar-menu > li > a > span { padding-left: 22px; }
 
 .skin-queimadas .main-header #gov-header #header input.searchButton{background:url("dist/img/sprite.png") 0 2px;}
 
@@ -371,7 +350,7 @@
   padding-top: 0px !important;
 }
 
-.skin-queimadas .content-header { z-index: 500 !important; }
+.skin-queimadas .content-header { z-index: 1011 !important; }
 
 .control-sidebar, .control-sidebar-bg {
   width: 45px !important;
@@ -386,4 +365,8 @@
 
 .control-sidebar > .tab-content > a > i:hover, .control-sidebar > .tab-content > a > i.active {
   color: #FFFFFF;
+}
+
+.dropdown-closed > .dropdown-menu {
+  display: none !important;
 }
