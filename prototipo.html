@@ -343,7 +343,7 @@
                           </ul>
               </li>
               <li>
-                <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                <a href="#" id="control-sidebar" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
               </li>
             </ul>
           </div>
@@ -967,7 +967,77 @@
           </div>
           <!-- Small boxes (Stat box) -->
           <div class="row">
-            <div id="terrama2-map" class="terrama2-map fullmenu cursor-move"></div>
+            <div id="terrama2-map" class="terrama2-map fullmenu cursor-move">
+              <div id="teste-leg" class="col-md-3" style="
+                position: absolute;
+                z-index: 1300;
+                top: 20px;
+                right: 0;
+              ">
+                <div class="box box-solid">
+                  <div class="box-header with-border">
+                    <h3 class="box-title">Legendas</h3>
+                    <div class="box-tools">
+                      <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="box-body no-padding">
+                    <ul class="nav nav-pills nav-stacked">
+                      <li><a href="#"><div style="
+                        background-color: #FFEBCD;
+                        width: 15px;
+                        height: 15px;
+                        margin-left: 5px;
+                        border: solid 2px black;
+                        display: inline-block;
+                      "></div><span style="margin-left: 15px;">0 focos</span></a></li>
+                      <li><a href="#"><div style="
+                        background-color: #A21C0D;
+                        width: 15px;
+                        height: 15px;
+                        margin-left: 5px;
+                        border: solid 2px black;
+                        display: inline-block;
+                      "></div><span style="margin-left: 15px;">De 25001 a 50000 focos</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--<div style="
+                position: absolute;
+                z-index: 1300;
+                width: 250px;
+                height: 100px;
+                top: 20px !important;
+                right: 50px !important;
+                background: rgb(241, 241, 241);
+                background-clip: content-box;
+                border: solid 4px rgba(255,255,255,.6);
+                border-radius: 5px;
+              ">
+                <div style="padding: 5px;">
+                  <p class="title" style="text-align: center; font-weight: 800;">Legendas</p>
+                  <div style="
+                    background-color: #FFEBCD;
+                    width: 15px;
+                    height: 15px;
+                    margin-left: 5px;
+                    border: solid 2px black;
+                  "></div>
+                  <p id="teste-leg" style="margin-left: 30px; margin-top: -17px;">0 focos</p>
+                  <div style="
+                    background-color: #A21C0D;
+                    width: 15px;
+                    height: 15px;
+                    margin-left: 5px;
+                    border: solid 2px black;
+                  "></div>
+                  <p id="teste-leg2" style="margin-left: 30px; margin-top: -17px;">De 25001 a 50000 focos</p>
+                </div>
+              </div>-->
+            </div>
           </div>
 
         </section><!-- /.content -->
@@ -1358,6 +1428,18 @@
     var interval = window.setInterval(function() { olMap.updateSize(); }, 10);
 
     window.setTimeout(function() { clearInterval(interval); }, 300);
+
+    $('#control-sidebar').on('click', function() {
+      if(!$('.control-sidebar').hasClass('control-sidebar-open')) {
+        $('.ol-zoom').animate({ 'right': '60px' }, { duration: 300, queue: false });
+        $('.ol-attribution').animate({ 'right': '60px' }, { duration: 300, queue: false });
+        $('#teste-leg').animate({ 'right': '45px' }, { duration: 300, queue: false });
+      } else {
+        $('.ol-zoom').animate({ 'right': '15px' }, { duration: 300, queue: false });
+        $('.ol-attribution').animate({ 'right': '15px' }, { duration: 300, queue: false });
+        $('#teste-leg').animate({ 'right': '0' }, { duration: 300, queue: false });
+      }
+    });
     </script>
   </body>
 </html>
